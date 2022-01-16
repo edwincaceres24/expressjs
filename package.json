@@ -4,12 +4,23 @@
   "description": "Express JS and API course",
   "main": "app.js",
   "scripts": {
-    "test": "npm run"
+    "dev": "nodemon app.js",
+    "start": "node app.js",
+    "lint": "eslint"
   },
   "keywords": [
     "js",
     "express"
   ],
   "author": "Edwin Caceres",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }

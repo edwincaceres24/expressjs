@@ -3,8 +3,9 @@ const express = require("express"),
 			routerApi = require('./routes');
 
 const app = express()
+app.use(express.json())
 
-app.get('/',(req,res)=>{ //We always use req and response as paramenters
+app.get('/',(req,res)=>{ //Request are form the client and the server serves the response
 		res.send('Basic Express Setup')
 })
 
